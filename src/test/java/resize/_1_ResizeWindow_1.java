@@ -9,7 +9,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class _1_ResizeWindow {
+public class _1_ResizeWindow_1 {
 	
 	static WebDriver driver;
 
@@ -33,6 +33,18 @@ public class _1_ResizeWindow {
 	
 	@Test
 	public void windowResizeCode() throws InterruptedException
+	{
+		System.out.println("Currnet Page Title After resizing the window is : " + driver.getTitle());
+		
+		// For demonstation purpose only,
+		// to see the window size is resized to the specified resolution given as parameter to constructor of Dimension Class
+		// in @Before anotation setup() method
+		Thread.sleep(5000);
+
+	}
+	
+	@Test
+	public void windowResizeCode1() throws InterruptedException
 	{
 		System.out.println("Currnet Page Title After resizing the window is : " + driver.getTitle());
 		
